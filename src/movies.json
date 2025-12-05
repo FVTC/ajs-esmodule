@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Transformers",
+    "category": "Action",
+    "rating": 3.5,
+    "releaseYear": 2007,
+    "isFeatured": false
+  },
+  {
+    "id": 2,
+    "title": "The Matrix",
+    "category": "Sci-Fi",
+    "rating": 4.7,
+    "releaseYear": 1999,
+    "isFeatured": true
+  },
+  {
+    "id": 3,
+    "title": "The Da Vinci Code",
+    "category": "Mystery",
+    "rating": 3.2,
+    "releaseYear": 2006,
+    "isFeatured": false
+  },
+  {
+    "id": 4,
+    "title": "Star Wars: A New Hope",
+    "category": "Sci-Fi",
+    "rating": 4.8,
+    "releaseYear": 1977,
+    "isFeatured": true
+  },
+  {
+    "id": 5,
+    "title": "Suicide Squad",
+    "category": "Action",
+    "rating": 2.9,
+    "releaseYear": 2016,
+    "isFeatured": false
+  },
+  {
+    "id": 6,
+    "title": "Jurassic Park",
+    "category": "Adventure",
+    "rating": 4.5,
+    "releaseYear": 1993,
+    "isFeatured": false
+  },
+  {
+    "id": 7,
+    "title": "Justice League",
+    "category": "Action",
+    "rating": 3.1,
+    "releaseYear": 2017,
+    "isFeatured": false
+  },
+  {
+    "id": 8,
+    "title": "The Dark Knight",
+    "category": "Action",
+    "rating": 4.9,
+    "releaseYear": 2008,
+    "isFeatured": true
+  },
+  {
+    "id": 9,
+    "title": "The Amazing Spider-Man 2",
+    "category": "Action",
+    "rating": 3.3,
+    "releaseYear": 2014,
+    "isFeatured": false
+  },
+  {
+    "id": 10,
+    "title": "Pirates of the Caribbean: Dead Man's Chest",
+    "category": "Adventure",
+    "rating": 3.4,
+    "releaseYear": 2006,
+    "isFeatured": false
+  }
+]

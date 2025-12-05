@@ -1,0 +1,62 @@
+name: Week 2 – ES Module Utils
+
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout student repo
+        uses: actions/checkout@v4
+
+      # Replace FVTC/ajs-esmodule with student repo in forks ONLY
+      - name: Rewrite README badge repo path (forks only)
+        if: github.repository_owner != 'FVTC'
+        run: |
+          if [ -f README.md ]; then
+            # Only rewrite if the instructor repo path exists in the README
+            if grep -q 'FVTC/ajs-esmodule' README.md; then
+              sed -i "s|FVTC/ajs-esmodule|${{ github.repository }}|g" README.md
+            fi
+          fi
+
+      - name: Commit README update (forks only)
+        if: github.repository_owner != 'FVTC'
+        run: |
+          if git diff --quiet README.md; then
+            echo "No README changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+          git commit -m "Rewrite README badge repo path" || true
+          git push || true
+
+      - name: Checkout instructor tests
+        uses: actions/checkout@v4
+        with:
+          repository: FVTC/ajs-tests
+          path: ajs-tests
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Copy Week 2 tests into this repo
+        run: |
+          cp ajs-tests/week2/assignment2.test.js .
+          rm -rf ajs-tests
+
+      - name: Verify list-utils.js exists
+        run: |
+          test -f src/list-utils.js
+
+      - name: Run tests
+        run: node --test assignment2.test.js
