@@ -12,7 +12,7 @@ jobs:
       - name: Checkout student repo
         uses: actions/checkout@v4
 
-      # Replace FVTC/ajs-esmodule with student repo in forks ONLY
+      # Replace FVTC/ajs with student repo in forks ONLY
       - name: Rewrite README badge repo path (forks only)
         if: github.repository_owner != 'FVTC'
         run: |

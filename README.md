@@ -1,15 +1,6 @@
-# Advanced JavaScript - Week 2 Assignment
+# Advanced JavaScript >> Assignment 2 - ES Modules & Vite
 
-## Test Status
-
-[![ES Module Utils Tests](../../actions/workflows/assignment.yml/badge.svg)](actions/workflows/assignment.yml)
-![Tests](https://img.shields.io/github/actions/workflow/status/rdappel/test/assignment.yml?label=Tests)
-
-![Issues](https://img.shields.io/github/issues/rdappel/test?label=Open%20Issues)
-![PRs](https://img.shields.io/github/issues-pr/rdappel/test?label=Pull%20Requests)
-
-
-## Shields IO Badges
-
-![React](https://img.shields.io/badge/React-20232A.svg?logo=react&logoColor=61DAFB)
+![Tests](https://img.shields.io/github/actions/workflow/status/fvtc/ajs-esmodule/assignment.yml?label=Tests)
+![Issues](https://img.shields.io/github/issues/fvtc/ajs-esmodule?label=Open%20Issues)
+![PRs](https://img.shields.io/github/issues-pr/fvtc/ajs-esmodule?label=Pull%20Requests)
 ![Vite](https://img.shields.io/badge/Vite-646CFF.svg?logo=vite&logoColor=white)
